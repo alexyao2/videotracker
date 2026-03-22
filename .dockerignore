@@ -1,0 +1,13 @@
+# local 
+videos.db
+logs/
+/data/raw/
+
+# global
+**/__pycache__/
+*.pyc
+
+# environment
+.env
+.git/
+.dist/

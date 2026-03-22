@@ -1,0 +1,13 @@
+services:
+  tracker-app:
+    build: .
+    container_name: video_tracker
+    command: ["python", "main.py", "youtube", "--channel-id", "YOUR_ID_HERE"]
+    volumes:
+      # Syncs your local DB and logs with the container
+      - ./videos.db:/videotracker/videos.db
+      - ./logs:/videotracker/logs
+      - ./data:/videotracker/data
+    env_file:
+      - .env
+    restart: always

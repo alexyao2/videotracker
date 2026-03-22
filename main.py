@@ -4,7 +4,6 @@ from ingest.tiktok import ingest_tiktok_user
 from db.session import engine
 from db.models import Base
 
-
 def main():
     parser = argparse.ArgumentParser(
         description="Cross-platform video ingestion CLI"

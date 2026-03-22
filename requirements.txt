@@ -3,3 +3,4 @@ python-dotenv
 pandas
 TikTokApi>=6.2.0
 playwright
+sqlalchemy
